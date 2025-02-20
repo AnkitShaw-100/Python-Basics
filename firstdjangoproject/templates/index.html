@@ -1,20 +1,64 @@
-<!DOCTYPE html>
+{% comment %} <!DOCTYPE html>
 <html>
-<head>
-    <title>Hello World</title>
+  <head>
+    <title>{{title}}</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color:rgb(214, 85, 85);
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #333;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(214, 85, 85);
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: #333;
+      }
     </style>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
-</html>
+  </head>
+  <body>
+    <h1>{{ankit}}</h1>
+    <h1>{{bdata}}</h1>
+    {%  for n in clist %}
+    <h2>{{forloop.counter0}} {{n}}</h2>
+    {% endfor %}
+    
+    {%  for n in clist %}
+    <h2>{{forloop.first}} {{n}}</h2>
+    {% endfor %}
+
+    {%  for n in clist %}
+    <h2>{{forloop.last}} {{n}}</h2>
+    {% endfor %}
+
+    <br/>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Roll number</th>
+        <th>Branch</th>
+      </tr>
+      {% for n in student_details %}
+      <tr>
+        <td>{{n.name}}</td>
+        <td>{{n.roll}}</td>
+        <td>{{n.branch}}</td>
+      </tr>
+      {% endfor %} 
+
+
+      {% if  number|length > 0 %}
+
+      {% for n in number %}
+
+      {% if n > 1 %}
+      <div>{{n}}</div>
+      {% endif %}
+
+      {% endfor %} 
+      {% else %}
+        <div>No data found</div>
+        {% endif %}
+
+    
+    
+  </body>
+</html> {% endcomment %}

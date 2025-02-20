@@ -1,0 +1,183 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 500px; /* Limit image height */
+    object-fit: cover; /* Prevent stretching */
+    border-radius: 10px;
+}
+
+.hero p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Sections */
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Home Page */
+.home {
+    text-align: center;
+    padding: 30px;
+}
+
+.home p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* About Page */
+.about h2 {
+    margin-top: 15px;
+    color: #444;
+}
+
+.about ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+.about ul li {
+    padding: 5px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Services Page */
+.services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services ul li {
+    background: #f4a261;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Contact Page */
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact button {
+    padding: 12px;
+    background: #222222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #555;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
+}
